@@ -205,6 +205,7 @@ def plot_boxchart(run_df,
                   show=True,
                   x_tick_size=20,
                   y_tick_size=20,
+                  showmeans=True,
                   ):
     #     fig, ax = plt.subplots(figsize=[1/4*run_df.shape[0],10])
     fig, ax = plt.subplots(figsize=[20, 10])
@@ -212,6 +213,7 @@ def plot_boxchart(run_df,
                      y=y,
                      data=run_df,
                      hue=hue,
+                     showmeans=True
                      )
 
     ax.set_title(
